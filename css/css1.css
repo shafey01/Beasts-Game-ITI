@@ -1,0 +1,345 @@
+@font-face{
+    font-family: myfont;
+    src: url(2.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: myfont;
+  }
+  body{
+    background: url(../images/original.gif);
+    background-size: cover;
+  }
+  .template{
+    overflow: hidden;
+  }
+
+  #canvas {
+    background: url(../images/gamebg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90%;
+    max-height: 664px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow:0px 0px 15px 15px rgb(119, 233, 248);
+  }
+
+  #container {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+
+  .template img {
+    width: 30%;
+    height: 75%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+  }
+  
+
+  .template #header, #pause-header {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: xx-large;
+    color: #e3f5f4;
+  }
+
+  #Play, #Exit{
+    margin-bottom: 2.2%;
+  }
+
+  #Play:hover, #Exit:hover{
+    border-radius: 20px;
+    box-shadow:0px 0px 15px 5px red;
+  }
+
+  #easy,
+  #medium,
+  #hard, #single, #multi {
+    font-size: x-large;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 32%;
+    background-color: azure;
+    width: 24%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 1%;
+  }
+#difficulty  p:not(#header):hover, #mode  p:not(#header):hover{
+  box-shadow:0px 0px 15px 0px red;
+  color: red;
+  cursor: pointer;
+}
+
+#multi{
+  top: 50%;
+}
+
+#usernameS #header, #usernameM #header{
+  font-size: large;
+}
+
+#nickname, #nickname1, #nickname2{
+  margin-top: 18%;
+  padding: 2% 0;
+  border-radius: 15px;
+  border: inset;
+}
+
+#nickname1, #nickname2, #submitUser{
+  display: block;
+  margin: auto;
+}
+#nickname1{
+  margin-top: 13%;
+}
+#nickname2{
+  margin-top: 3%;
+}
+#submitUser{
+  margin-top: 2%;
+  background-color: #e3f5f4;;
+  padding: 2%;
+  border-radius: 12px;
+  color: black;
+}
+
+#submitUser:hover{
+  box-shadow:0px 0px 15px 5px red;
+  color: red;
+}
+
+#nickname:focus, #nickname1:focus, #nickname2:focus{
+  box-shadow:0px 0px 15px 5px red;
+  color: red;
+}
+
+  #medium {
+    top: 50%;
+  }
+
+  #hard {
+    top: 70%;
+  }
+
+  #sound, #music, #ok, #mute{
+    width: 6%;
+    height: 12%;
+    cursor: pointer;
+  }
+
+  #sound{
+    position: absolute;
+    top: -25%;
+    left: -17%;
+  }
+  #music{
+    position: absolute;
+    top: 13%;
+    left: -17%;
+  }
+
+  #ok{
+    position: absolute;
+    top: 55%;
+  }
+
+  #mute{
+    position: absolute;
+    top: 0;
+  }
+
+  #settings p{
+    left: 48%;
+    font-size: x-large;
+    color: red;
+    position: absolute;
+  }
+  #settings img:hover + p:not(#header){
+    box-shadow:10px 0px 25px 5px #e3f5f4;
+    font-size: 30px;
+    padding: 0.2%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #sound_btn{
+    top: 35%;
+  }
+  #music_btn{
+    top: 54%;
+  }
+
+  #score-box {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width:23%;
+    height: 90px;
+  }
+
+  #score-content{
+    position: absolute;
+    top: 46%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: xx-large;
+    color: white;
+    
+
+  }
+
+  #score-p{
+    position: absolute;
+    top: 28%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 26%;
+    font-size: xx-large;
+    font-family: myfont;
+    color: white;
+  }
+
+  .icon{
+    width: 6%;
+    height: 12%;
+  }
+  
+  #how-to-play #how-menu-btn {
+    width: 6%;
+    height: 12%;
+    position: absolute;
+    right: 0;
+    top: 52%;
+    cursor: pointer;
+ 
+  }
+  
+  #restart-img, #setting-img, #menu-img, #close-img, #menu-img1, #menu-img2, #restart-img1, #restart-img2{
+    width: 6%;
+    height: 12%;
+    position: absolute;
+    right: 865px;
+    top: 52%;
+    cursor: pointer;
+  }
+
+  #restart-img {
+    left: 36.5%;
+  }
+  #setting-img {
+    left: 43.5%;
+  }
+  #menu-img, #menu-img1, #menu-img2{
+    
+    left: 50.5%;
+    
+  }
+  #close-img {
+    left: 57.5%;
+  }
+  #game-img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:-51%;
+    width: 25%;
+    height:100px;
+    margin: auto;
+    
+  }
+  #game-steps{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:34%;
+    width: 23%;
+    margin: auto;
+    font-family: initial;
+    list-style-type:none ;
+
+  }
+  #game-steps li{
+    text-align: initial;
+    font-size: 12px;
+    color: wheat;
+  }
+  #how-to-play #menu-img{
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #gameover #header{
+    color: red;
+  }
+
+  #win-tie #header{
+    color: #6eff6e;
+  }
+
+ #restart-img1, #restart-img2{
+    margin: auto 43%;
+  }
+
+  #win-tie #score-p{
+    animation: blink 2s infinite;
+  -webkit-animation: blink 2s infinite;
+  }
+
+  #rankings div{
+    position: fixed;
+    top: 27%;
+    left: 0;
+    right: 0;
+    width: 27%;
+    max-height: 40%;
+    margin: auto;
+    overflow: auto;
+  }
+
+  #rankings p:not(#header){
+    background-color: azure;
+    border-radius: 12px;
+    padding: 2%;
+    margin: 3% 4%;
+  }
+
+  #rankings p:not(#header):hover{
+    box-shadow:0px 0px 15px 5px red;
+   color: red;
+  }
